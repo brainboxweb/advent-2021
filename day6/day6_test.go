@@ -9,9 +9,11 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+const testDataPath = "../testdata"
+
 func TestPart1(t *testing.T) {
 	theString := "3,4,3,1,2"
-	data := helpers.GetDataString("../data/day6.txt")
+	data := helpers.GetDataString(testDataPath + "/day6.txt")
 	theBigString := data[0]
 	tests := []struct {
 		data     string
@@ -64,7 +66,7 @@ func TestPart1(t *testing.T) {
 
 func TestPart2(t *testing.T) {
 	theString := "3,4,3,1,2"
-	data := helpers.GetDataString("../data/day6.txt")
+	data := helpers.GetDataString(testDataPath + "/day6.txt")
 	theBigString := data[0]
 	tests := []struct {
 		data     string

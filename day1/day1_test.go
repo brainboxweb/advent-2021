@@ -7,8 +7,10 @@ import (
 	"github.com/brainboxweb/advent-2021/helpers"
 )
 
+const testDataPath = "../testdata"
+
 func TestPart1(t *testing.T) {
-	dataSet, err := helpers.GetDataInt("../data/day1.txt")
+	dataSet, err := helpers.GetDataInt(testDataPath + "/day1.txt")
 	if err != nil {
 		panic("not expected")
 	}
@@ -59,7 +61,7 @@ func TestPart1(t *testing.T) {
 }
 
 func TestDay21(t *testing.T) {
-	dataSet, err := helpers.GetDataInt("../data/day1.txt")
+	dataSet, err := helpers.GetDataInt(testDataPath + "/day1.txt")
 	if err != nil {
 		panic("not expected")
 	}

@@ -7,8 +7,10 @@ import (
 	"github.com/brainboxweb/advent-2021/helpers"
 )
 
+const testDataPath = "../testdata"
+
 func TestDay2(t *testing.T) {
-	dataSet := helpers.GetDataString("../data/day2.txt")
+	dataSet := helpers.GetDataString(testDataPath + "/day2.txt")
 	tests := []struct {
 		in       []string
 		expected int
@@ -41,7 +43,7 @@ func TestDay2(t *testing.T) {
 }
 
 func TestDay2Part2(t *testing.T) {
-	dataSet := helpers.GetDataString("../data/day2.txt")
+	dataSet := helpers.GetDataString(testDataPath + "/day2.txt")
 	tests := []struct {
 		in       []string
 		expected int
