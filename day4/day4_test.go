@@ -7,17 +7,19 @@ import (
 	"github.com/brainboxweb/advent-2021/helpers"
 )
 
+const testDataPath = "../testdata"
+
 func TestPart1(t *testing.T) {
 	tests := []struct {
 		dataFile string
 		expected int
 	}{
 		{
-			"../data/day4_test.txt",
+			testDataPath + "/day4_test.txt",
 			4512,
 		},
 		{
-			"../data/day4.txt",
+			testDataPath + "/day4.txt",
 			89001,
 		},
 	}
@@ -39,11 +41,11 @@ func TestPart2(t *testing.T) {
 		expected int
 	}{
 		{
-			"../data/day4_test.txt",
+			testDataPath + "/day4_test.txt",
 			1924,
 		},
 		{
-			"../data/day4.txt",
+			testDataPath + "/day4.txt",
 			7296,
 		},
 	}

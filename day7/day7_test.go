@@ -9,6 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+const testDataPath = "../testdata"
+
 func TestCalls(t *testing.T) {
 	tests := []struct {
 		positions []int
@@ -54,7 +56,7 @@ func TestCalls2(t *testing.T) {
 }
 
 func testData() []int {
-	dataString := helpers.GetDataString("../data/day7.txt")
+	dataString := helpers.GetDataString(testDataPath + "/day7.txt")
 	data := strings.Split(dataString[0], ",")
 	testData := []int{}
 	for _, val := range data {
